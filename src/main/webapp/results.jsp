@@ -13,7 +13,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voting Results</title>
     <link rel="stylesheet" href="css/style.css">
-    <meta http-equiv="refresh" content="10">
 </head>
 <body>
 <div class="container">
@@ -25,6 +24,7 @@
     <% } %>
 
     <h1>Live Voting Results</h1>
+    <p class="results-link"><a href="results.jsp">&#8635; Refresh results</a></p>
 
     <%
         if ("true".equals(request.getParameter("voted"))) {
