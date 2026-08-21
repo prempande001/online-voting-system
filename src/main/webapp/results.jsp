@@ -43,6 +43,7 @@
     %>
 
     <table class="results-table">
+        <caption class="visually-hidden">Live vote counts and share percentage for each candidate</caption>
         <thead>
         <tr>
             <th>Candidate</th>
