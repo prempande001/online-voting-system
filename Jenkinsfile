@@ -43,14 +43,6 @@ pipeline {
                 bat 'docker build -t online-voting-app:latest .'
             }
         }
-		stage('Deploy') {
-			steps {
-			bat '''
-			docker stop online-voting-container || exit 0
-			docker rm online-voting-container || exit 0
-			docker run -d --name online-voting-container -p 8081:8080 online-voting-app:latest
-			'''
-			}
-		}
+	
     }
 }
