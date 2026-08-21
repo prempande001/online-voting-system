@@ -32,7 +32,8 @@ pipeline {
                     -Dsonar.projectKey=online-voting-app ^
                     -Dsonar.projectName=online-voting-app ^
                     -Dsonar.sources=. ^
-                    -Dsonar.java.binaries=target/classes
+                    -Dsonar.java.binaries=target/classes ^
+                    -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
                     """
                 }
             }
